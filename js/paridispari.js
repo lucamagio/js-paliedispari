@@ -7,7 +7,6 @@ let somma = Number(sceltaNumero) + randomNumber()
 
 //Funzione per generare un numero casuale
 function randomNumber(){
-    console.log(Math.floor((Math.random() * 5) + 1))
    return Math.floor((Math.random() * 5) + 1)
 }
 
