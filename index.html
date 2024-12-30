@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-<script src="js/palindroma.js"></script>
+    <header>
+        <h1>Palindroma?</h1>
+    </header>
+    <main class="container">
+        <form>
+            <div class="mb-3">
+                <label for="word" class="form-label">Inserisci al parola</label>
+                <input type="text" class="form-control" id="word" aria-describedby="wordHelp">
+                <div class="form-text">Inserisci al parola e scopri se è palindroma</div>
+            </div>
+
+            <button class="btn btn-primary mt-4" type="submit" id="submit">Scopri</button>
+
+            <div id="result" class="text-center mt-4"></div>
+
+            <div id="history" class="mt-5">
+                <h4>Storico</h4>
+                <ul id="historyList" class="list-unstyled"></ul>
+            </div>
+        </form>
+    </main>
+<script src="js/extraPalindroma.js"></script>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>

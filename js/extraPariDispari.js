@@ -30,15 +30,16 @@ submitButton.addEventListener('click', function(event){
         return
     }
 
-    //Risultato del gioco 
+    //Risultato del gioco
+    let resultMessage 
     let gameResult
     let classResult
     if ((sommaIsEven && userChoiseIsEven) || (!sommaIsEven && !userChoiseIsEven)) {
-        resultMessage = `<div class='alert alert-success mt-3'>Hai vinto!</div>`;
+        resultMessage = `<div class='alert alert-success mt-3'>Hai vinto!</div>`
         gameResult = 'Vittoria'
         classResult = 'vittoria'
     } else {
-        resultMessage = `<div class='alert alert-danger mt-3'>Hai perso!</div>`;
+        resultMessage = `<div class='alert alert-danger mt-3'>Hai perso!</div>`
         gameResult = 'Sconfitta'
         classResult = 'sconfitta'
     }
